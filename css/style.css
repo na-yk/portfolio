@@ -57,7 +57,7 @@ body.dark .contact-items a{
     color: rgb(230, 230, 230);
 }
 body.dark .navbar-main{
-    background-color: rgba(41,44,53);
+    background-color: rgba(41,44,53,0.8);
 }
 body.dark .navbar-right{
     background-color: rgba(41,44,53,0.8);
@@ -75,7 +75,7 @@ body.dark .navbar-toggleBtn{
     position:fixed;
     width: 100vw;
     margin: 0px;
-    height: 80px;
+    height: 60px;
     z-index:4;
     background-color: transparent;
 }
@@ -143,7 +143,6 @@ body.dark .navbar-toggleBtn{
 .menu-item{
     display: inline;
     font-family: 'GmarketSansLight';
-    /* color: white; */
     padding:8px;
     text-decoration: none;
     font-weight: bold;
@@ -172,6 +171,8 @@ body.dark .navbar-toggleBtn{
     display:flex;
     justify-content: center;
     width:50%; 
+    font-family: 'GmarketSansLight';
+    font-weight: bold;
 }
 .mobile-contact-mail i{
     display:flex;
@@ -181,7 +182,7 @@ body.dark .navbar-toggleBtn{
 /* 토글 메뉴 버튼 영역 */
 .navbar-toggleBtn{
     position:absolute;
-    right: 32px;
+    right: 20px;
     top:10px;
     font-size:28px;
     color:#292C35;
@@ -192,6 +193,7 @@ body.dark .navbar-toggleBtn{
 .navbar-right.active{
     display:flex;
 }
+
 /* contact 버튼 영역 */
 .contact-label{
     display: flex;

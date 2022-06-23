@@ -28,7 +28,6 @@ closeBtn.addEventListener('click', function(){
 // 모바일/태블릿 navbar
 const toggleBtn = document.querySelector('.navbar-toggleBtn');
 const navright = document.querySelector('.navbar-right');
-const navmain = document.querySelector('.navbar-main');
 
 toggleBtn.addEventListener('click',function(){
     navright.classList.toggle('active');

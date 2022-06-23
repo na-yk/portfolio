@@ -6,25 +6,27 @@
         @media only screen and (max-width: ($tabletSize)){@content;}
     }
     @else if $media == tablet{
-        @media only screen and (min-width: ($tabletSize)) and (max-width: $pcSize) {@content;}
+        @media only screen and (min-width: ($tabletSize+1)) and (max-width: $pcSize) {@content;}
     }
     @else if $media == pc{
-        @media only screen and (min-width: ($pcSize)){@content;}
+        @media only screen and (min-width: ($pcSize+1)){@content;}
     }
 }
 
 .navbar-main{
     @include respond-to(mobile){
         flex-direction:column;
+        background-color: rgba(255,255,255,0.8);
     }
     @include respond-to(tablet){
         flex-direction:column;
+        background-color: rgba(255,255,255,0.8);
     }
     @include respond-to(pc){
         background-color:transparent;
     }
-    
 }
+
 .navbar-left{
     @include respond-to(mobile){
         padding-top: 20px;
@@ -36,19 +38,23 @@
 .navbar-right{
     @include respond-to(mobile){
         flex-direction:column;
+        justify-content: space-between;
         align-items: center;
-        margin-top:25px;
-        padding-bottom:20px;
+        padding:30px 0px 25px 0px;
+        position:absolute;
+        top:60px;
         background-color: rgba(255,255,255,0.8);
         width:100vw;
+        height:30vh;
     }
     @include respond-to(tablet){
-        flex-direction:column;
+        position:absolute;
+        top:60px;
         align-items: center;
-        margin-top:25px;
-        padding-bottom:20px;
+        padding:30px 0px 30px 0px;
         background-color: rgba(255,255,255,0.8);
         width:100vw;
+        height: 18vh;
     }
     @include respond-to(pc){
         display:flex;
@@ -57,31 +63,64 @@
 .menu{
     @include respond-to(mobile){
         flex-direction:column;
+        justify-content: space-between;
         align-items: center;
         font-size:15px;
+        flex-basis:55%;
+        margin:0px 0px 0px 0px;
     }
     @include respond-to(tablet){
         flex-direction:column;
         align-items: center;
         font-size:20px;
-        width: 40%;
+        flex-basis: 40%;
+        margin:0px 0px 0px 0px;
+        height:100%;
+        justify-content: space-evenly;
+    }
+}
+.menu-item{
+    @include respond-to(mobile){
+        margin-top:5px;
+    }
+    @include respond-to(tablet){
+        margin-top:5px;
     }
 }
 .mobile-contact{
     @include respond-to(tablet){
-        width:40%;
+        flex-basis:40%;
     }
     
     @include respond-to(pc){
         display:none;
     }
 }
-.mobile-contact-items a{
+.mobile-contact-items{
     @include respond-to(mobile){
-        font-size: 15px;
+        width:70%;
     }
     @include respond-to(tablet){
-        font-size: 24px;
+        width:70%;
+    }
+}
+.mobile-contact-items a{
+    @include respond-to(mobile){
+        font-size: 20px;
+        display:flex;
+        justify-content:center;
+        margin-right:0px;
+    }
+    @include respond-to(tablet){
+        font-size: 30px;
+        display:flex;
+        justify-content:center;
+        margin-right:0px;
+    }
+}
+.mobile-contact-mail{
+    @include respond-to(mobile){
+        font-size: 13px;
     }
 }
 .contact-label{
@@ -97,7 +136,14 @@
         display:none;
     }
 }
-
+.contact{
+    @include respond-to(mobile){
+        display:none;
+    }
+    @include respond-to(tablet){
+        display:none;
+    }
+}
 .about-details{
     @include respond-to(mobile){
         flex-direction:column;
