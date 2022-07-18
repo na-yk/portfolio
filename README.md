@@ -1,4 +1,4 @@
-# Portforlio
+# Portfolio
 💬 멋사 과제로 시작해서 제대로 된 포트폴리오로 거듭나기 프로젝트   
 ⭐ https://na-yk.github.io/portfolio/
 
