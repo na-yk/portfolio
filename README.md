@@ -1,6 +1,7 @@
 # Portfolio
 💬 멋사 과제로 시작해서 제대로 된 포트폴리오로 거듭나기 프로젝트   
-⭐ https://na-yk.github.io/portfolio/
+⭐(언제 끝날까?)  
+https://na-yk.github.io/portfolio/
 
 ## Version
 |Date|ver|주요 사항|
